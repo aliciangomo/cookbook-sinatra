@@ -1,0 +1,12 @@
+<head><link rel="stylesheet" href="/public/application.css"></head>
+
+<p> Take a look at some recipe ideas: </p>
+<ul >
+  <% @loaded_recipes.each_with_index do |recipe, index| %>
+    <li >
+      <p id= "title"> <%= "#{index +1}. #{recipe.name.capitalize}" =%></p>
+      <p id= "description"><%= "#{recipe.description.capitalize}"=%></p>
+      <a href = '/add/<%=index=%>'><p id= "action_link"> Add recipe to my Cookbook </p></a>
+    </li>
+  <% end %>
+</ul>

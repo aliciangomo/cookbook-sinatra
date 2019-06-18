@@ -1,0 +1,42 @@
+ul { list-style-type: none }
+
+ul li {
+  background-color: #F8F8F8;
+}
+
+
+#title {
+  font-size: 14px;
+  color: #003366;
+  font-weight: bold;
+  padding: 10px
+}
+
+#description {
+  font-size: 12px;
+  color: #003366;
+  font-weight: normal;
+  padding: 10px
+}
+
+
+#action_link {
+  font-size: 12px;
+  padding: 0px 0px 0px 10px
+}
+
+#main_action {
+  color: #800080;
+  font-size: 14px;
+  font-weight: bold
+}
+
+
+form {
+  border: 1px solid #c5cdd4;
+  background-color: #F8F8F8;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 12px 20px 12px 40px
+}
+

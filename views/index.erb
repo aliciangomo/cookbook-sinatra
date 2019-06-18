@@ -1,0 +1,23 @@
+<h2 style = "font-size: 28px; color: #003366; font-weight: 700" > Welcome to your CookBook app! :) </h2>
+<b>
+<p style = "font-weight: normal; font-style: italic"> These are the available recipes: </p>
+<ul style="list-style-type: none">
+  <% @recipes.each_with_index do |recipe, index| %>
+    <li style = "background-color: #F8F8F8">
+      <p id = title style = "font-size: 14px; color: #003366; font-weight: bold; padding: 10px"><%= "#{index +1}. [#{recipe.state == true ? 'x' : ' '}] #{recipe.name.capitalize}" =%></p>
+      <br>
+      <p id = description style = "font-size: 12px; color: #003366; font-weight: normal; padding: 10px"><%="#{recipe.description.capitalize}"=%></p>
+      <a href = '/destroy/<%=index=%>'><span id=action_link style = "font-size: 12px; padding: 0px 0px 0px 10px"> Delete recipe </span></a><a href = '/mark/<%=index=%>'><span id=action_link  style = "font-size: 12px; padding: 0px 0px 0px 10px"> Mark as done </span></a>
+    </li>
+  <% end %>
+    <li>
+      <a href = '/new'> <p id= main_action style = "color: #800080; font-size: 14px; font-weight: bold"> >> Create a new recipe <p></a>
+    </li>
+    <li>
+      <a href = '/scrape'><p style = "font-size: 14px; color: #800080; font-weight: bold"> >> Get recipe ideas </p></a>
+    </li>
+</ul>
+
+
+<!-- How to put Delete and Mark as done in the same line?-->
+<!-- How to link to CSS?-->
